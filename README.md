@@ -1,9 +1,9 @@
 # 6DOF-Model-Rocket-Simulation
 
-This project contains the 6DOF dynamics and controls simulation for a thrust vector controlled model rocket.
-The repo houses a Simulink file which houses the dynamics and controls loop and a Matlab script which stores
-the mass properties and interacts with the Simulink model to conduct Monte-Carlo runs. In addition, the repo contains
-some images from the Monte-Carlo runs as well as a pdf of the dynamics and controls derivation.
+This project contains the 6DOF dynamics and controls simulation for a thrust vector controlled model rocket that
+I am planning on building. The repo houses a Simulink file which houses the dynamics and controls loop and a Matlab 
+script which storesthe mass properties and interacts with the Simulink model to conduct Monte-Carlo runs. In addition, 
+the repo contains some images from the Monte-Carlo runs as well as a pdf of the dynamics and controls derivation.
 
 ## The Simulation
 Newton's Second Law was used for traslational dynamics, Euler's equations were used for rotational 
@@ -23,7 +23,7 @@ on using.
 
 ## Controls
 The controller attempts to keep the vehicle upright and makes no attempt to control the position. 
-The sensor that I would use (BNO055) outputs orientation as a quaternion, so it is convenient to use a PID controller that
+The sensor that I will use use (Adafruit BNO055) outputs orientation as a quaternion, so it is convenient to use a PID controller that
 operates on the vector part of the quaternion to produce a desired vehicle torque. Then based on the current thrust that the
 motor provides as well as the knowledge of the TVC mount to COM distance, the TVC servo deflections are calculated to apply the
 desired torque on the vehicle. However, black powder motors have quite a bit of variability from batch to batch, so it would not
