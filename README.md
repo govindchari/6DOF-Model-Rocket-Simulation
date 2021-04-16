@@ -29,6 +29,6 @@ motor provides as well as the knowledge of the TVC mount to COM distance, the TV
 desired torque on the vehicle. However, black powder motors have quite a bit of variability from batch to batch, so it would not
 be wise to determine the thrust that the motor provides from the provided thrust curve. Instead, based on the acceleration read by
 the IMU and knowledge of the vehicle mass, the thrust can be calculated. This entire process of attitude control requires knowledge of
-the distance from the TVC mount to the COM and the vehicle mass. Due to measurement error the truth value and what is measured will be 
+the distance from the TVC mount to the COM and the vehicle mass. Due to measurement error, the truth value and the measured value will be 
 off by a little bit. These differences are then parameterized and varied in each Monte-Carlo run along with the other nonideal effects 
 considered in the previous section.
